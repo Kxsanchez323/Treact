@@ -16,26 +16,122 @@
         <nav>
         <div class="nav__container">
             <a href="#" class="logo__link">
-                <img class="logo" src="" alt=""> Treact
+                <img class="logo" src="./assets/logo.svg" alt=""> Treact
             </a>
             <ul class="nav__links">
-                <li><a href="#" class="nav__link">About</a></li>
-                <li><a href="#" class="nav__link">Blog</a></li>
-                <li><a href="#" class="nav__link">Pricing</a></li>
-                <li><a href="#" class="nav__link">Contact Us</a></li>
-                <li><a href="#" class="nav__link">Login</a></li>
+                <li><a href="#" class="nav__link link__hover">About</a></li>
+                <li><a href="#" class="nav__link link__hover">Blog</a></li>
+                <li><a href="#" class="nav__link link__hover">Pricing</a></li>
+                <li><a href="#" class="nav__link link__hover">Contact Us</a></li>
+                <li><a href="#" class="nav__link link__hover">Login</a></li>
                 <li><a href="#" class="nav__link nav__link--primary">Sign Up</a></li>
             </ul> 
-            <button></button>
+            <button class="btn__menu" onclick="openMenu()"><i class="fas fa-bars"></i></button>
+            <div class="menu__backdrop">
+                <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                <i class="fas fa-times"></i></button>
+
+                <ul class="menu__links">
+                    <li class="popup__list"><a href="#" class="menu__link" onclick="closeMenu()">About</a></li>
+                    <li class="popup__list"><a href="#" class="menu__link" onclick="closeMenu()">Blog</a></li>
+                    <li class="popup__list"><a href="#" class="menu__link" onclick="closeMenu()">Pricing</a></li>
+                    <li class="popup__list"><a href="#" class="menu__link" onclick="closeMenu()">Contact</a></li>
+                    <li class="popup__list"><a href="#" class="menu__link" onclick="closeMenu()">Login</a></li>
+                    <li class="popup__list"><a href="#" class="menu__link nav__link--primary" onclick="closeMenu()">Sign up</a></li>
+                </ul>
+            </div>
             </div>
     </nav>
 
     <header class="row header__container">
         <div class="header__description--container">
-            <h1 class="header__description"> </h1>
-        </div>
+            <h1 class="header__description">Beautiful React Templates <span class="color--purple">for you</span></h1>
+            <div class="header__description--para">
+                <p>Our templates are easy to setup, understand and customize.
+                     Fully modular components with a variety of pages and components.</p>
+            </div>
 
+            <div class="emailbtn__container">
+                <input class="email-btn" type="email" placeholder="Your Email Address">
+                <button class="btn">Get Started</button>
+            </div>
+            <div class="customer__logos">
+                <p class="customer__description">Our Trusted Customers</p>
+                <img src="./assets/customers-logo.png" alt="Customers logos!">
+            </div>
+        </div>
+        <figure class="header__img--container">
+            <img class="header__img" src="./assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg" alt="">
+        </figure>
     </header>
     </section>
+
+    <main>
+        <section id="services">
+            <div class="row services__row">
+                <h2 class="section__title color--purple">FEATURES</h2>
+                <h3 class="section__description">We have Amazing <span class="color--purple">Service</span></h3>
+                <p class=services__para>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor mollitia ipsum temporibus enim hic culpa qui nisi? Hic, aspernatur quibusdam.</p>
+                <div class="services__wrapper">
+                    <div class="service">
+                        <div class="service__img">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="service__subtitle--wrapper">
+                            <h4 class="service__subtitle">
+                                Secure
+                            </h4>
+                            <p class="feature__para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quasi.</p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="service__img">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="service__subtitle--wrapper">
+                            <h4 class="service__subtitle">
+                                Secure
+                            </h4>
+                            <p class="feature__para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quasi.</p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="service__img">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="service__subtitle--wrapper">
+                            <h4 class="service__subtitle">
+                                Secure
+                            </h4>
+                            <p class="feature__para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quasi.</p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="service__img">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="service__subtitle--wrapper">
+                            <h4 class="service__subtitle">
+                                Secure
+                            </h4>
+                            <p class="feature__para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quasi.</p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="service__img">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="service__subtitle--wrapper">
+                            <h4 class="service__subtitle">
+                                Secure
+                            </h4>
+                            <p class="feature__para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quasi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
 </body>
 </html>
